@@ -1,6 +1,0 @@
-kc_copy= kc_transform.copy()
-
-kc_copy["log(sqft_lot)"] = np.log(kc_copy["sqft_lot"])
-
-# Visually inspect raw vs. transformed values
-kc_copy[["sqft_lot", "log(sqft_lot)"]]

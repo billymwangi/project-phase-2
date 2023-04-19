@@ -1,5 +1,0 @@
-fig, (ax1, ax2) = plt.subplots(ncols=2, figsize=(7,3))
-ax1.hist(kc_copy["sqft_lot"])
-ax1.set_xlabel("sqft_lot")
-ax2.hist(kc_copy["log(sqft_lot)"], color="orange")
-ax2.set_xlabel("log(sqft_lot)");

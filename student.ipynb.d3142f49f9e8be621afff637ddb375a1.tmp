@@ -1,7 +1,0 @@
-plt.scatter(kc_data['sqft_living'], kc_data['price'], label='sqft_living')
-plt.scatter(kc_data['sqft_above'], kc_data['price'], label='sqft_above')
-plt.xlabel('Square footage')
-plt.ylabel('Price')
-plt.title('Price vs Square footage')
-plt.legend()
-plt.show()

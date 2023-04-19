@@ -1,5 +1,0 @@
-#converting date column from categorical (object) to numerical (int64)
-kc_data['date'] = pd.to_datetime(kc_data['date'], format='%m/%d/%Y')
-#Extract the year and create a new column
-kc_data['year'] = kc_data['date'].dt.year
-kc_data.drop('date', axis=1, inplace=True)

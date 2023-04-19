@@ -1,5 +1,0 @@
-X= kc_transform[['sqft_living','sqft_basement']]
-y=kc_transform['price']
-model=sm.OLS(y, sm.add_constant(X))
-results=model.fit()
-results.summary()

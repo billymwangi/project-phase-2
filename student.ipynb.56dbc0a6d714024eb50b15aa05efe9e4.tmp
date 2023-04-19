@@ -1,9 +1,0 @@
-def filling_missing_values(data, columns):
-    missing = missing_values(data) # store the output of missing_values function
-    for col in columns:
-        if col in missing.index: # check if column has missing values
-            data[col] = data[col].fillna(data[col].mode()[0]) # fill missing values with mode
-    return data
-filling_missing_values(kc_data, ['waterfront','yr_renovated','view'])
-
-kc_data.isna().sum()

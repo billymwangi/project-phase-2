@@ -1,1 +1,0 @@
-kc_data.drop(['lat', 'long', 'zipcode'], axis=1, inplace=True)

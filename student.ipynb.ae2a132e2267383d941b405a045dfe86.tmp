@@ -1,2 +1,0 @@
-kc_data= pd.read_csv('data/kc_house_data.csv')
-kc_data.head()

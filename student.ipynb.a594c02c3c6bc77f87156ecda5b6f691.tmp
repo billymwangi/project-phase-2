@@ -1,7 +1,0 @@
-def check_duplicates(data):
-    """
-    A simple function to check for duplicates in a given dataset.
-    """
-    duplicates = data.duplicated().sum()
-    return duplicates
-check_duplicates(kc_data)
