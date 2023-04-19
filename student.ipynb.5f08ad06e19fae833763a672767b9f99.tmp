@@ -1,0 +1,7 @@
+specific_col = 'price'
+for col in kc_data.columns:
+    if col != specific_col:
+        plt.scatter(kc_data[col], kc_data[specific_col])
+        plt.xlabel(col)
+        plt.ylabel(specific_col)
+        plt.show()

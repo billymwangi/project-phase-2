@@ -1,0 +1,12 @@
+# Group the data by zipcode and calculate the mean latitude and longitude
+zipcode_data = kc_data.groupby('zipcode').agg({'lat': 'mean', 'long': 'mean'}).reset_index()
+
+# Create a map centered at the mean latitude and longitude of all the zipcodes
+m = folium.Map(location=[kc_data['lat'].mean(), kc_data['long'].mean()], zoom_start=10)
+
+# Add markers for each zipcode
+for _, row in zipcode_data.iterrows():
+    folium.Marker(location=[row['lat'], row['long']], popup=row['zipcode']).add_to(m)
+
+# Display the map
+m

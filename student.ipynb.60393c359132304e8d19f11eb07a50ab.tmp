@@ -1,0 +1,2 @@
+#dropping the columns year, yr_built, id
+kc_data.drop(['year','yr_built', 'id'],axis=1, inplace=True )

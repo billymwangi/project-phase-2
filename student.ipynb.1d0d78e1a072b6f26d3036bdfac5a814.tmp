@@ -1,0 +1,1 @@
+kc_copy.drop(['sqft_lot15',"sqft_lot"],axis=1, inplace= True)

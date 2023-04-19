@@ -1,0 +1,5 @@
+def place_holders(data, column):
+    inconsistent = data[data[column] == '?']
+    data[column].replace('?', 0.0, regex=False, inplace=True)
+
+place_holders(kc_data, 'sqft_basement')

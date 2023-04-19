@@ -1,0 +1,1 @@
+check_outliers(kc_data, ['price', 'sqft_lot', 'sqft_above','sqft_lot','sqft_living15','sqft_lot15'])

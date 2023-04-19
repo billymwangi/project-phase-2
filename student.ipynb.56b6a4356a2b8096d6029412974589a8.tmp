@@ -1,0 +1,13 @@
+def plot_quarter_counts(data):
+    dates = pd.to_datetime(data['date'], format='%m/%d/%Y')
+    dates_column = dates.dt.quarter
+    # get the counts for each quarter
+    quarter_counts = dates_column.value_counts()
+    quarter_counts.plot.bar()
+    # plot a bar chart of the quarter counts
+    plt.title('Counts of Sales by Quarter')
+    plt.xlabel('Quarter')
+    plt.ylabel('Count')
+    plt.show()
+
+plot_quarter_counts(kc_quarter)

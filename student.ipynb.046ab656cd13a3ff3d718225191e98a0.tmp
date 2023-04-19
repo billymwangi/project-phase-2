@@ -1,0 +1,4 @@
+#one hot encoding waterfront,view and condition
+kc_transform = pd.get_dummies(kc_data, columns=["waterfront",'view','condition'])
+kc_transform = kc_transform.drop(["condition_Poor",'view_NONE','waterfront_NO'], axis=1)
+kc_transform

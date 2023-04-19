@@ -1,0 +1,2 @@
+#getting general summary statistics  on the data
+kc_data.describe()

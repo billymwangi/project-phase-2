@@ -1,0 +1,9 @@
+def find_inconsistent_data(df):
+    # Identify potential data inconsistencies
+    inconsistent_bedrooms = df[(df['bedrooms'] == 10) | (df['bedrooms'] == 11) | (df['bedrooms'] == 33)]
+    inconsistent_bathrooms = df[(df['bathrooms'] == 7) | (df['bathrooms'] == 8)]
+
+    # Concatenate the inconsistent data into a single DataFrame
+    inconsistent_data = pd.concat([inconsistent_bedrooms, inconsistent_bathrooms])
+inconsistent_data = find_inconsistent_data(kc_data)
+inconsistent_data

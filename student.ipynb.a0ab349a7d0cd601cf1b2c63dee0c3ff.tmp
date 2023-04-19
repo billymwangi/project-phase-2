@@ -1,0 +1,10 @@
+# fit the model 
+pred_model4 = LinearRegression()
+pred_model4.fit(X, y)
+
+# predict the values of the dependent variable 
+y_pred = pred_model4.predict(X)
+
+# calculate the RMSE
+rmse = np.sqrt(mean_squared_error(y, y_pred))
+print('RMSE:', rmse)

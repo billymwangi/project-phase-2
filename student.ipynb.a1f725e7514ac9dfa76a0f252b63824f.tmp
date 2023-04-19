@@ -1,0 +1,6 @@
+X = kc_transform.drop('price', axis=1)
+y = kc_transform['price']
+X = sm.add_constant(X)
+model1 = sm.OLS(y, X)
+results1 = model1.fit() 
+print(results1.summary())

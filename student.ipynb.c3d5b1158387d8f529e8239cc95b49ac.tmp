@@ -1,0 +1,4 @@
+#Convert grade column to numeric using label encoding
+label_encoder = LabelEncoder()
+kc_transform['grade'] = label_encoder.fit_transform(kc_transform['grade'])
+kc_transform['grade'].value_counts()

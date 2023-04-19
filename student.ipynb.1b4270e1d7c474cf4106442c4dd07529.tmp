@@ -1,0 +1,7 @@
+fig = plt.figure(figsize=(15,8))
+sm.graphics.plot_partregress_grid(
+    results1,
+    exog_idx=list(X_all.columns.values),
+    grid=(4,6),
+    fig=fig)
+plt.show()

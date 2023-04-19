@@ -1,0 +1,3 @@
+#creating new column age
+kc_data['age']= kc_data['year']-kc_data['yr_built']
+kc_data['age']
