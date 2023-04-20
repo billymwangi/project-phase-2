@@ -1,6 +1,6 @@
 # King County Houses Multiple Regression Analysis
 
-Students name:
+Student names:
     - Billy Mwangi
     - Lynne Mutwiri
     - Sharon Kimani
