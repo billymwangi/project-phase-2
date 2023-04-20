@@ -1,5 +1,12 @@
 # King County Houses Multiple Regression Analysis
 
+Students name:
+    - Billy Mwangi
+    - Lynne Mutwiri
+    - Sharon Kimani
+    - Susan Kanyora
+    - Kellen Kinya 
+    - Derrick Wekesa
 
 ![Graph](Image_2.jpg)
 
