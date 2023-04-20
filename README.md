@@ -12,12 +12,12 @@ According to the 2020 census, King County was the most populous county in Washin
 Tello Real Estate Agency has a dataset of home features collected from the county houses. They include the number of bathrooms, number of bedrooms, number of floors, square footage of living space amongst others, as seen in the dataset attached. The agency wants to understand the relationship between these features and the sale prices of houses in King County, and particularly, which features most affect the prices. 
 
 ## Objectives
-The following are the questions whose answers we seek in the analysis:
-* Are the various features significant predictors of house prices?
-* Which features are highly considered in determination of house prices?
-* Are some or all of these features related to each other?
-* What are the peak house sale seasons?
-We used multiple regression analysis to answer the above questions.
+The following are the questions whose answers we have come up with in this analysis:
+* To understand the relationships between the various features and the sale price of a house.
+* To determine the peak house sale season.
+* To build a multiple linear regression model that identifies the most important factors that influence the sale price of a house.
+* To use the model to gain insights into the home sales market and improve decision-making processes.
+
 
 
 ## Data Understanding and Analysis
@@ -45,10 +45,16 @@ We used the following data to compute our analysis:
 ### How the various seasons impact house purchase:
 ![Graph](quarters.png)
 
+## Challenges
+* The model does have some limitations: given that some of the variables needed to be log-transformed to satisfy regression assumptions, any new data used with the model would have to undergo similar preprocessing. 
+* Additionally, given regional differences in housing prices, the model's applicability to data from other counties may be limited. 
+* Due to the presence of high multicollinearity among several predictor variables, we had to remove some of those columns from our analysis.
 
 ## Conclusion
 * The variables that have a major influence on the price of the house are; square foot living, age of the house,good condition of the house,if the house is on a waterfront and has an excellent view.
-* The variables that has the least influence on the price of the house are; grade,number of bedrooms,sqft lot,sqft basement and sqft lot 15.
+* The variables that has the least influence on the price of the house are; grade, number of bedrooms, sqft lot, sqft basement and sqft lot 15.
+* For those looking for economical housing options, it might be wise to consider sacrificing spacious living quarters or a scenic waterfront view.
+
 
 We can also see that:
 
