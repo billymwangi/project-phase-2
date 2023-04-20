@@ -1,4 +1,4 @@
-# King County Houses Price Prediction Using Regression Analysis
+# King County Houses Multiple Regression Analysis
 
 
 ![Graph](Image_2.jpg)
